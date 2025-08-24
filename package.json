@@ -1,6 +1,6 @@
 {
   "name": "web-to-epub",
-  "description": "manifest.json description",
+  "description": "Convert web pages into EPUBs you can read on your eReader",
   "private": true,
   "version": "1.0.0",
   "type": "module",
