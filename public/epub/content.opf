@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="2.0">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>$TITLE</dc:title>
+		<dc:creator>$AUTHOR</dc:creator>
+		<dc:type>Web page</dc:type>
+		<dc:source>$URL</dc:source>
+		<dc:date opf:event="publication">$DATE</dc:date>
+		<dc:language>en</dc:language>
+		<dc:identifier id="BookID" opf:scheme="CustomID">$SLUG</dc:identifier>
+	</metadata>
+	<manifest>
+		<item id="toc" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+		<item id="styles" href="styles/stylesheet.css" media-type="text/css"/>
+		<item id="content" href="text/content.xhtml" media-type="application/xhtml+xml"/>
+		$IMAGES
+	</manifest>
+	<spine toc="toc">
+		<itemref idref="content"/>
+	</spine>
+</package>
