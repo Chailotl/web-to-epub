@@ -4,6 +4,7 @@ import { defineConfig } from 'wxt';
 export default defineConfig({
 	srcDir: 'src',
 	manifest: {
+		'name': 'Web to EPUB',
 		'host_permissions': ['<all_urls>'],
 	}
 });
