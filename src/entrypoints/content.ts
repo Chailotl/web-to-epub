@@ -6,8 +6,6 @@ export default defineContentScript({
 });
 
 browser.runtime.onMessage.addListener(async message => {
-	if (message !== 'convert') { return; }
-
 	const documentClone = document.cloneNode(true) as Document;
 	const article = new Readability(documentClone, { keepClasses: true }).parse();
 
@@ -50,6 +48,6 @@ browser.runtime.onMessage.addListener(async message => {
 	// Serialize to string
 	article.content = new XMLSerializer().serializeToString(frag);
 
-	// Send to background script
+	// Send to popup script
 	browser.runtime.sendMessage(article);
 });
