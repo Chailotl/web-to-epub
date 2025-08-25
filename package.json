@@ -2,7 +2,7 @@
   "name": "web-to-epub",
   "description": "Convert web pages into EPUBs you can read on your eReader",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "wxt",
